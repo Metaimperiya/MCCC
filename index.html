@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>metaimperiya | MC Command Center - Scripting & Logic Control Hub</title>
+    <meta name="description" content="Metaimperiya MC Command Center: The ultimate control hub for game logic, scripting, and simulation management. Professional tools for advanced digital world control.">
+    <meta name="keywords" content="metaimperiya, mc command center, mccc, sims 4 scripts, simulation mods, gameplay control, logic assets, system management">
+    <meta name="author" content="metaimperiya">
+
+    <style>
+        :root { --cmd-blue: #00aaff; --bg: #000; --panel: #050505; --text: #88ccff; }
+        body { background: var(--bg); color: var(--text); font-family: 'Consolas', 'Monaco', monospace; margin: 0; line-height: 1.4; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+        header { padding: 50px 0; border-bottom: 2px solid var(--cmd-blue); background: #000a12; }
+        h1 { font-size: clamp(30px, 8vw, 90px); margin: 0; color: #fff; text-transform: uppercase; font-weight: 400; letter-spacing: 2px; }
+        .system-status { display: inline-block; color: var(--cmd-blue); border: 1px solid var(--cmd-blue); padding: 5px 20px; margin-top: 15px; font-size: 13px; text-transform: uppercase; background: rgba(0, 170, 255, 0.1); }
+
+        .intro { padding: 50px 0; border-bottom: 1px solid #111; }
+        .intro h2 { font-size: 22px; color: #fff; text-transform: uppercase; margin-bottom: 15px; }
+        .intro p { font-size: 16px; color: #5588aa; max-width: 850px; }
+
+        .logic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; padding: 60px 0; }
+        .logic-card { background: var(--panel); border: 1px solid #112233; padding: 35px; position: relative; transition: 0.3s; }
+        .logic-card:hover { border-color: var(--cmd-blue); box-shadow: 0 0 20px rgba(0, 170, 255, 0.15); background: #080f1a; }
+        .logic-card h3 { color: #fff; font-size: 18px; margin-top: 0; text-transform: uppercase; border-bottom: 1px solid #1a2a3a; padding-bottom: 15px; }
+        
+        .code-list { list-style: none; padding: 0; margin-top: 20px; font-size: 13px; color: #447799; }
+        .code-list li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        .code-list li::before { content: ">_"; position: absolute; left: 0; color: var(--cmd-blue); }
+
+        .seo-footer { background: #020508; padding: 80px 0; border-top: 1px solid #0a1520; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .info-grid h4 { color: var(--cmd-blue); text-transform: uppercase; font-size: 15px; margin-bottom: 15px; }
+        .info-grid p { font-size: 13px; color: #3a5a70; text-align: justify; }
+
+        footer { padding: 40px; text-align: center; color: #1a2a3a; font-size: 11px; text-transform: uppercase; letter-spacing: 4px; border-top: 1px solid #050a10; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>MC Command Center</h1>
+            <div class="system-status">System.Core: ACTIVE // OVERRIDE_ENABLED</div>
+        </header>
+
+        <section class="intro">
+            <h2>Програмна влада над реальністю</h2>
+            <p>
+                Розділ <strong>MC Command Center</strong> у Мегамоллі metaimperiya — це командний місток вашої симуляції. Ми надаємо доступ до найпотужніших інструментів керування логікою світу: від демографічного контролю та налаштування відносин до автоматизації складних ігрових процесів. Це місце, де ви перестаєте бути гравцем і стаєте Архітектором.
+            </p>
+        </section>
+
+        <main class="logic-grid">
+            <div class="logic-card">
+                <h3>Core Automation</h3>
+                <ul class="code-list">
+                    <li>Керування часом та ігровим календарем</li>
+                    <li>Автоматизація чистки та оптимізації світу</li>
+                    <li>Глобальні налаштування ігрових механік</li>
+                </ul>
+            </div>
+            <div class="logic-card">
+                <h3>Population Logic</h3>
+                <ul class="code-list">
+                    <li>Контроль народжуваності та старіння</li>
+                    <li>Скрипти випадкових подій та сюжетів</li>
+                    <li>Управління неігровими персонажами (NPC)</li>
+                </ul>
+            </div>
+            <div class="logic-card">
+                <h3>Character Override</h3>
+                <ul class="code-list">
+                    <li>Миттєве редагування рис характеру</li>
+                    <li>Налаштування кар'єрного росту та навичок</li>
+                    <li>Контроль соціальних зв'язків та симпатій</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <section class="seo-footer">
+        <div class="container">
+            <div class="info-grid">
+                <div class="col">
+                    <h4>Повний контроль</h4>
+                    <p>Департамент <strong>MCCC</strong> інтегрує найсучасніші скриптові рішення у вашу "Метаімперію". Це дозволяє створювати унікальні сценарії для ваших відео та серіалів, де кожна дія персонажа підпорядкована вашому задуму.</p>
+                </div>
+                <div class="col">
+                    <h4>Технічна стабільність</h4>
+                    <p>Всі логічні асети розділу <strong>MC Command Center</strong> протестовані на сумісність з іншими модифікаціями. Ми забезпечуємо чистий код та високу продуктивність системи навіть при максимальних навантаженнях на процесор.</p>
+                </div>
+                <div class="col">
+                    <h4>Для режисерів та творців</h4>
+                    <p>Якщо ваша мета — синтетичне кіно, то інструменти <strong>MC Command Center</strong> стануть вашим головним помічником. Виставляйте світло, керуйте натовпом та створюйте ідеальні умови для кожного кадру одним кліком.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        metaimperiya © 2026 | COMMAND CENTER | LOGIC IS ABSOLUTE
+    </footer>
+
+</body>
+</html>
